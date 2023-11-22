@@ -72,12 +72,16 @@ route.get("/", (req, res) => {
         `Invalid distribution: Total marks in the question paper (${totalMarksInQuestionPaper}) do not match the given total marks (${totalMarks}).`
       );
     }
+    console.log({questionPaper,
+        totalMarks: totalMarksInQuestionPaper,
+        questionsCount: questionPaper.length})
     res.status(200).json({
       questionPaper,
       totalMarks: totalMarksInQuestionPaper,
       questionsCount: questionPaper.length,
     });
   } catch (err) {
+    console.log({ msg: err.message })
     res.status(500).json({ msg: err.message });
   }
 });

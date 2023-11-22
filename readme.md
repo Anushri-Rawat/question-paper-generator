@@ -16,8 +16,7 @@ To generate a question paper, follow these steps:
 2. Open a terminal.
 3. Navigate to the project directory.
 4. Run the command: `node app.js`.
-5. The generated question paper will be displayed in the terminal.
-6. Then go to http://localhost:3000/ to see the result.
+5. Then go to http://localhost:3000/ to see the result or the result will be displayed in the terminal.
 
 
 ## Technologies Used
